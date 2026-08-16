@@ -16,8 +16,8 @@ header h1 {
 
 #search {
   flex: 1;
-  width: 650px;
-  max-width: 65vw;
+  width: 850px;
+  max-width: 75vw;
   box-sizing: border-box;
   display: block;
   background: #171512;
