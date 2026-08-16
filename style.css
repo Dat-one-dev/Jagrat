@@ -9,15 +9,33 @@ main {
 }
 
 #search {
-  width: 900px;
+  flex: 1;
+  max-width: 900px;
+  min-width: 0px;
+
+  box-sizing: border-box;
   display: block;
-  margin: auto;
   background: #171512;
   color: #f0dfc0;
+  border: 1px solid #c8892d;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0 16px;
   height: 45px;
 }
 
+#search::placeholder {
+  color:  #9b917f;
+}
+
 body {
   font-family: "Jagrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
 }
