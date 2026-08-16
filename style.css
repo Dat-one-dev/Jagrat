@@ -36,11 +36,66 @@ body {
   background-color: #111;
 }
 
+.browsertabs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: end;
+  padding-left: 10px;
+  background: rgba(20, 18, 15, 0.9);
+  z-index: 67;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.08);
+}
 
+.tabs {
+  width: 220px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  background: rgba(50, 47, 42, 0.95);
+  border-radius: 8px 8px 0 0;
+  color: #eee5d2;
+}
 
-.tab-icon {
-    font-size: 16px;
-    color: #d99a27;
+.tabIcn {
+  color: #d99a27;
+  font-size: 16px;
+}
 
-    flex-shrink: 0;
+.tabTitle {
+  flex: 1;
+  font-size: 13px;
+}
+
+.tabX {
+  border: 0;
+  background: none;
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tabX:hover {
+  color: white;
+}
+
+.newTab {
+  width: 34px;
+  height: 34px;
+  margin-left: 4px;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: #eee5d2;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.newTab:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
