@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Jagrat;
+  src: url("fonts/HindiRaj.otf")
+}
+
+main {
+  display: grid;
+}
+
+
+
+body {
+  font-family: "Jagrat", sans-serif;
+}
