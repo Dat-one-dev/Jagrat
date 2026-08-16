@@ -8,11 +8,16 @@ main {
   grid-template-columns: 1fr 2fr 1fr;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  white-space: nowrap;
+}
+
 #search {
   flex: 1;
-  max-width: 900px;
-  min-width: 0px;
-
+  width: 650px;
+  max-width: 65vw;
   box-sizing: border-box;
   display: block;
   background: #171512;
@@ -34,8 +39,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  padding: 20px;
+  gap: 80px;
+  padding: 24px 32px;
 }
