@@ -2,29 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jagrat</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>JagraT</h1>
-        <input id="search" type="text" placeholder="Discover the bhrman...">
-    </header>
-    <main>
-        <aside>
-            <p>I AM ASIDE</p>
+    <div class="mainapp">
+        <aside class="sidebar">
+            <div class="idkwhttoname">
+                <div class="om">
+                    ॐ
+                </div>
+                <div>
+                    <h1>JagraT</h1>
+                    <p>नमस्ते Kartik</p>
+                </div>
+            </div>
+            <nav>
+                <a class="active" href="#">
+                    <span>◈</span
+                    Home
+                </a>
+
+                <a href="#">
+                    <span>◉</span>
+                    Focus
+                </a>
+                <a href="#">
+                    <span>⚙</span>
+                    Settings
+                </a>
+            </nav>
         </aside>
-        <section>
-            <p>I M SECTION</p>
-        </section>
-        <aside>
-            <p>I AM ASIDE2</p>
-        </aside>
-    </main>
-    <footer>
-        <p> I am footer</p>
-    </footer>
+        <main class="center">
+            <section class="hero">
+                <div class="tuffskt">
+                    उत्तिष्ठ जाग्रत प्राप्य वरान्निबोधत
+                </div>
+                <div class="quote" id="quote">
+                    ARISE, AWAKE AND STOP NOT TILL THE GOAL IS REACHED.
+                </div>
+                <!--make sure to change this hardcoded thing ok -->
+                <div class="clock" id="clock">
+                    10:24
+                </div>
+                <div class="ampm" id="ampm">
+                    AM
+                </div>
+                <div class="date" id="date">
+                    Saturday, 16 August
+                </div>
+                <div class="searchPanel">
+                    <input id="search" type="text" placeholder="Discover the bhrman..." autocomplete="off">
+                    <button id="searchButt">S</button>
+                </div>
+                <div class="search-engines">
+                    <button data-engine="google">G</button>
+                    <button data-engine="ddg">D</button>
+                    <button data-engine="wiki">W</button>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="sanskrit">
+                    सर्वे भवन्तु सुखिनः
+                </div>
+                <div>
+                    MAY ALL BEINGS BE HAPPY
+                </div>
+            <aside>
+                <section class="gita">
+                    <div class="gita-sanskrit">
+                        यदा यदा हि धर्मस्य<br>
+                        ग्लानिर्भवति भारत ।
+                    </div>
+                    <p>
+                        Whenever there is decline of
+                        dharma and rise of adharma,
+                        I manifest myself.
+                    </p>
+                    <small> - Bhagwat Gita 4.7</small>
+                </section>
+                <section class="calendar">
+                    <h3>AUGUST 2026</h3>
+                    <div class="weekdays">
+                        <span>S</span>
+                        <span>M</span>
+                        <span>T</span>
+                        <span>W</span>
+                        <span>T</span>
+                        <span>F</span>
+                        <span>S</span>
+                    </div>
+                    <div class="days" id="calendar-days"></div>
+                </section>
+                <section class="tasks">
+                    <h3>TODAY</h3>
+                    <p class="taskquote">
+                        Clear your mind. <br>
+                        Focus your Karm on Dharam <br>
+                    </p>
+                    <label>
+                        <input type="checkbox">
+                        Study Upanishads
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Grind on Stardance for Macbook Neo
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Complete Pending Work
+                    </label>
+                </section>
+            </aside>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
