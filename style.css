@@ -18,3 +18,12 @@
     font-family: Jagrat;
     src: url("fonts/HindiRaj.otf");
 }
+
+@font-face {
+    font-family: Pyri;
+    src: url("fonts/pyriform-tones-nf/PyriformTonesNF.ttf");
+}
+
+body {
+  font-family: "Pyri";
+}
