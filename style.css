@@ -5,9 +5,18 @@
 
 main {
   display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
-
+#search {
+  width: 900px;
+  display: block;
+  margin: auto;
+  background: #171512;
+  color: #f0dfc0;
+  padding: 0 16px;
+  height: 45px;
+}
 
 body {
   font-family: "Jagrat", sans-serif;
