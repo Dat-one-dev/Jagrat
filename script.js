@@ -1,16 +1,37 @@
 const search = document.getElementById("search");
+const searchButtons = document.querySelectorAll(".search-engines button");
 
+const engines = {
+  google: "https://www.google.com/search?q=",
+  ddg: "https://duckduckgo.com/?q=",
+  wiki: "https://en.wikipedia.org/w/index.php?search="
+};
+let engine = "wiki";
+
+searchButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    engine = button.dataset.engine
+    searchButtons.forEach(function (btn) {
+      btn.classList.remove("selected");
+    })
+
+    button.classList.add("selected");
+    search.focus();
+  })
+})
 search.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    const query = search.value;
-    if (query.trim() !== "") {
+    const query = search.value.trim();
+    if (query !== "") {
       window.open(
-        "https://en.wikipedia.org/w/index.php?search=" + encodeURIComponent(query),
+        engines[engine] + encodeURIComponent(query),
         "_blank"
       );
     }
   }
 });
+
+
 
 function samay() {
   const now = new Date();

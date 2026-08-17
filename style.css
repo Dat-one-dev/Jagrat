@@ -1,3 +1,5 @@
+/* Varialbles fonts and shi */
+
 @font-face {
     font-family: Jagrat;
     src: url("fonts/HindiRaj.otf");
@@ -19,8 +21,21 @@
     --border: rgba(232, 223, 201, 0.14);
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+/* Main shi */
+
 body {
   font-family: Arial, sans-serif;
+  color: var(--text);
   width: 100%;
   height: 100%;
   background-image: url("assets/Background-proto.png");
@@ -30,6 +45,16 @@ body {
   background-attachment: fixed;
   background-color: #111;
 }
+
+.mainapp {
+    min-height: 100vh;
+    padding-top: 42px;
+
+    display: grid;
+    grid-template-columns: 220px 1fr 280px;
+}
+
+/* tabs*/
 
 .browsertabs {
   position: fixed;
@@ -45,6 +70,7 @@ body {
   border-bottom: 3px solid rgba(255, 255, 255, 0.08);
 }
 
+
 .tabs {
   width: 220px;
   height: 34px;
@@ -56,6 +82,8 @@ body {
   border-radius: 8px 8px 0 0;
   color: #eee5d2;
 }
+
+
 
 .tabIcn {
   color: #d99a27;
@@ -95,20 +123,132 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Making gridy layout * .center .hero*/
+
+.center {
+    min-width: 0;
+    min-height: calc(100vh - 42px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.hero {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+
+/* Clock widget */
+
 .clock {
+    color: var(--gold);
     font-size: 72px;
     font-weight: 300;
-    color: var(--gold);
     letter-spacing: 2px;
 }
 
 .ampm {
-    font-size: 16px;
-    margin-top: -10px;
+    font-size: 18px;
+    margin-left: 8px;
 }
 
 .date {
-    margin-top: 6px;
+    margin-top: 8px;
+    color: var(--muted);
     font-size: 15px;
-    color: var(--red);
 }
+/* search engine Took some AI help here*/
+
+.searchPanel {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    margin: 30px auto 12px;
+    background: rgba(20, 18, 15, 0.8);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.searchPanel input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: 15px;
+}
+
+.searchPanel input::placeholder {
+    color: var(--muted);
+}
+
+.searchPanel button {
+    width: 50px;
+    border: 0;
+    background: var(--gold);
+    color: var(--bg);
+    cursor: pointer;
+}
+
+.search-engines {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.search-engines button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: rgba(20, 18, 15, 0.6);
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.search-engines button:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+.search-engines button.selected {
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+/* tuff quotes */
+
+.tuffskt {
+    font-family: "Jagrat", serif;
+    font-size: 22px;
+    color: var(--gold-light);
+    margin-bottom: 5px;
+}
+
+.quote {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.bottom {
+    margin-top: 45px;
+    text-align: center;
+    color: var(--muted);
+}
+
+.sanskrit {
+    font-family: "Jagrat", serif;
+    font-size: 22px;
+    color: var(--gold-light);
+    margin-bottom: 5px;
+}
+
+/* music */
