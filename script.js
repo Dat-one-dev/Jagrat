@@ -1,5 +1,7 @@
 const search = document.getElementById("search");
 const searchButtons = document.querySelectorAll(".search-engines button");
+const music = document.getElementById("music");
+const playButton = document.getElementById("playButton");
 
 const engines = {
   google: "https://www.google.com/search?q=",
@@ -19,6 +21,7 @@ searchButtons.forEach(function (button) {
     search.focus();
   })
 })
+
 search.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     const query = search.value.trim();
@@ -31,7 +34,15 @@ search.addEventListener("keydown", function (event) {
   }
 });
 
-
+playButton.addEventListener("click", function () {
+    if (music.paused) {
+        music.play();
+        playButton.textContent = "||";
+    } else {
+        music.pause();
+        playButton.textContent = "▶";
+    }
+});
 
 function samay() {
   const now = new Date();
@@ -53,6 +64,7 @@ function samay() {
           month: "long"
       });
 }
+
 
 samay();
 setInterval(samay, 1000);

@@ -252,3 +252,69 @@ body {
 }
 
 /* music */
+
+/* music player */
+
+.music {
+    width: 500px;
+    margin-top: 40px;
+    padding: 15px;
+    background: rgba(20, 18, 15, 0.95);
+    border: 2px solid var(--border);
+    border-radius: 2%;
+}
+
+.music-info {
+    display: flex;
+    align-items: center;
+}
+
+.music-cover img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.music-text {
+    flex: 1;
+    text-align: center;
+}
+
+.music-title {
+    color: var(--text);
+    font-size: 16px;
+}
+
+.music-artist {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 3px;
+}
+.music-line {
+    height: 1px;
+    margin: 14px 5px 10px;
+    background: var(--border);
+}
+
+.music-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.music-controls button {
+    border: 0;
+    background: none;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.music-controls .play {
+    font-size: 20px;
+}
+
+.music-controls button:hover {
+    color: var(--gold);
+}
